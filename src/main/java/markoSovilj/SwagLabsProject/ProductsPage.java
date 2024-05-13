@@ -9,51 +9,51 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ProductsPage {
-	
+
 	WebDriver driver;
-	
+
 	public ProductsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy (css = ".inventory_item_name")
 	List<WebElement> productList;
-	
+
 	@FindBy (css = "title")
 	public
 	WebElement pageTitle;
-	
+
 	@FindBy (css = "#react-burger-menu-btn")
 	WebElement burgerMenuBtn;
-	
+
 	@FindBy (id = "inventory_sidebar_link")
 	WebElement allItemsBtn;
-	
+
 	public String selectProduct(String requestedProduct) {
 		WebElement choice = productList.stream().filter(s->s.getText().contains(requestedProduct)).findFirst().orElse(null);
 		String productName = choice.getText();
-		choice.click(); 
+		choice.click();
 		return productName;
 	}
-	
-	
+
+
 	public void addProduct(String requestedProduct) {
-		
+
 		for (int i = 0; i < productList.size(); i++) {
 			if(productList.get(i).getText().contains(requestedProduct)) {
 				driver.findElement(By.xpath("(//button)[" + (i + 3) + "]")).click();
 			}
-			
+
 		}
-		
+
 	}
-	
+
 	public void backToProductPage() {
 		burgerMenuBtn.click();
 		burgerMenuBtn.click();
 	}
-	
-	
-		
+
+
+
 }
