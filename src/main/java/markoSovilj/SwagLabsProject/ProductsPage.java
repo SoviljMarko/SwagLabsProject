@@ -24,6 +24,11 @@ public class ProductsPage {
 	public
 	WebElement pageTitle;
 	
+	@FindBy (css = "#react-burger-menu-btn")
+	WebElement burgerMenuBtn;
+	
+	@FindBy (id = "inventory_sidebar_link")
+	WebElement allItemsBtn;
 	
 	public String selectProduct(String requestedProduct) {
 		WebElement choice = productList.stream().filter(s->s.getText().contains(requestedProduct)).findFirst().orElse(null);
@@ -42,6 +47,11 @@ public class ProductsPage {
 			
 		}
 		
+	}
+	
+	public void backToProductPage() {
+		burgerMenuBtn.click();
+		burgerMenuBtn.click();
 	}
 	
 	
