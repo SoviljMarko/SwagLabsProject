@@ -33,12 +33,99 @@
     	<version>7.10.1</version>
     	<scope>compile</scope>
 	</dependency>
+	
+	
+	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 	<dependency>
-		<groupId>markoSovilj</groupId>
-		<artifactId>uipractice</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+    	<groupId>io.github.bonigarcia</groupId>
+    	<artifactId>webdrivermanager</artifactId>
+    	<version>5.8.0</version>
 	</dependency>
   </dependencies>
+
+<profiles>
+	<profile>
+		<id>Regression</id>
+		<build>
+    		<pluginManagement>
+      			<plugins>
+        			<plugin>
+        				<groupId>org.apache.maven.plugins</groupId>
+        				<artifactId>maven-surefire-plugin</artifactId>
+        				<version>3.2.5</version>
+        				<configuration>
+          					<suiteXmlFiles>
+            					<suiteXmlFile>testSuite/testng.xml</suiteXmlFile>
+          					</suiteXmlFiles>
+        				</configuration>
+					</plugin>
+				</plugins>
+			</pluginManagement>
+		</build>		
+	</profile>	
+	
+	<profile>
+		<id>LoginTest</id>
+		<build>
+    		<pluginManagement>
+      			<plugins>
+        			<plugin>
+        				<groupId>org.apache.maven.plugins</groupId>
+        				<artifactId>maven-surefire-plugin</artifactId>
+        				<version>3.2.5</version>
+        				<configuration>
+          					<suiteXmlFiles>
+            					<suiteXmlFile>testSuite/loginTestng.xml</suiteXmlFile>
+          					</suiteXmlFiles>
+        				</configuration>
+					</plugin>
+				</plugins>
+			</pluginManagement>
+		</build>		
+	</profile>
+	
+	<profile>
+		<id>AddAndRemoveTest</id>
+		<build>
+    		<pluginManagement>
+      			<plugins>
+        			<plugin>
+        				<groupId>org.apache.maven.plugins</groupId>
+        				<artifactId>maven-surefire-plugin</artifactId>
+        				<version>3.2.5</version>
+        				<configuration>
+          					<suiteXmlFiles>
+            					<suiteXmlFile>testSuite/addAndRemoveTestng.xml</suiteXmlFile>
+          					</suiteXmlFiles>
+        				</configuration>
+					</plugin>
+				</plugins>
+			</pluginManagement>
+		</build>		
+	</profile>
+	
+	<profile>
+		<id>ProductPriceConsistency</id>
+		<build>
+    		<pluginManagement>
+      			<plugins>
+        			<plugin>
+        				<groupId>org.apache.maven.plugins</groupId>
+        				<artifactId>maven-surefire-plugin</artifactId>
+        				<version>3.2.5</version>
+        				<configuration>
+          					<suiteXmlFiles>
+            					<suiteXmlFile>testSuite/ProductConsistencyTestng.xml</suiteXmlFile>
+          					</suiteXmlFiles>
+        				</configuration>
+					</plugin>
+				</plugins>
+			</pluginManagement>
+		</build>		
+	</profile>
+	
+</profiles>
+
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
