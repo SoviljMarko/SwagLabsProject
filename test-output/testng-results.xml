@@ -1,49 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="14" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-13T18:52:58 CEST" name="LoginTests" finished-at="2024-05-13T18:53:11 CEST" duration-ms="12708">
+  <suite started-at="2024-05-15T17:36:53 CEST" name="Regression" finished-at="2024-05-15T17:37:39 CEST" duration-ms="46036">
     <groups>
     </groups>
-    <test started-at="2024-05-13T18:52:58 CEST" name="Test" finished-at="2024-05-13T18:53:11 CEST" duration-ms="12708">
-      <class name="SwagLabsProjectTests.ProdAddAndRemTest">
-        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@708f5957]" started-at="2024-05-13T18:52:58 CEST" name="begin" finished-at="2024-05-13T18:53:01 CEST" duration-ms="2520" status="PASS">
+    <test started-at="2024-05-15T17:36:53 CEST" name="Test" finished-at="2024-05-15T17:37:39 CEST" duration-ms="46036">
+      <class name="SwagLabsProjectTests.ProductPriceConsistencyTest">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@304bb45b]" started-at="2024-05-15T17:37:07 CEST" name="begin" finished-at="2024-05-15T17:37:11 CEST" duration-ms="3629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- begin -->
-        <test-method signature="caseOne()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@708f5957]" started-at="2024-05-13T18:53:01 CEST" name="caseOne" finished-at="2024-05-13T18:53:03 CEST" duration-ms="2107" status="PASS">
+        <test-method signature="fitstTest()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@304bb45b]" started-at="2024-05-15T17:37:11 CEST" name="fitstTest" finished-at="2024-05-15T17:37:13 CEST" duration-ms="2022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fitstTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@304bb45b]" started-at="2024-05-15T17:37:13 CEST" name="finish" finished-at="2024-05-15T17:37:14 CEST" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@304bb45b]" started-at="2024-05-15T17:37:14 CEST" name="begin" finished-at="2024-05-15T17:37:18 CEST" duration-ms="4232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="secondTest()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@304bb45b]" started-at="2024-05-15T17:37:18 CEST" name="secondTest" finished-at="2024-05-15T17:37:21 CEST" duration-ms="2760" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button id="react-burger-menu-btn" style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; font-size: 0px; background: transparent; cursor: pointer;">...</button> is not clickable at point (30, 30). Other element would receive the click: <div class="bm-menu" style="height: 100%; box-sizing: border-box; overflow: auto;">...</div>
+  (Session info: chrome=124.0.6367.203)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3bca5587a72bc984fd0ad6ce72a5858, clickElement {id=f.43CCD1C83B4646530C6E6C663E968266.d.C564473229D7F0FC33BD9341746D7D25.e.473}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.203, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/f1/nz1q_2417h3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60134/devtoo..., se:cdpVersion: 124.0.6367.203, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (a3bca5587a72bc984fd0ad6ce72a5858)] -> css selector: #react-burger-menu-btn]
+Session ID: a3bca5587a72bc984fd0ad6ce72a5858]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="react-burger-menu-btn" style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; font-size: 0px; background: transparent; cursor: pointer;">...</button> is not clickable at point (30, 30). Other element would receive the click: <div class="bm-menu" style="height: 100%; box-sizing: border-box; overflow: auto;">...</div>
+  (Session info: chrome=124.0.6367.203)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3bca5587a72bc984fd0ad6ce72a5858, clickElement {id=f.43CCD1C83B4646530C6E6C663E968266.d.C564473229D7F0FC33BD9341746D7D25.e.473}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.203, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/f1/nz1q_2417h3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60134/devtoo..., se:cdpVersion: 124.0.6367.203, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (a3bca5587a72bc984fd0ad6ce72a5858)] -> css selector: #react-burger-menu-btn]
+Session ID: a3bca5587a72bc984fd0ad6ce72a5858
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at markoSovilj.SwagLabsProject.ProductsPage.backToProductPage(ProductsPage.java:54)
+at SwagLabsProjectTests.ProductPriceConsistencyTest.secondTest(ProductPriceConsistencyTest.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@304bb45b]" started-at="2024-05-15T17:37:21 CEST" name="finish" finished-at="2024-05-15T17:37:21 CEST" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@304bb45b]" started-at="2024-05-15T17:37:21 CEST" name="begin" finished-at="2024-05-15T17:37:24 CEST" duration-ms="2860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="thirdTest()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@304bb45b]" started-at="2024-05-15T17:37:24 CEST" name="thirdTest" finished-at="2024-05-15T17:37:29 CEST" duration-ms="4717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@304bb45b]" started-at="2024-05-15T17:37:29 CEST" name="finish" finished-at="2024-05-15T17:37:29 CEST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- SwagLabsProjectTests.ProductPriceConsistencyTest -->
+      <class name="SwagLabsProjectTests.ProdAddAndRemTest">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@533bda92]" started-at="2024-05-15T17:36:53 CEST" name="begin" finished-at="2024-05-15T17:36:59 CEST" duration-ms="5496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="caseOne()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@533bda92]" started-at="2024-05-15T17:36:59 CEST" name="caseOne" finished-at="2024-05-15T17:37:02 CEST" duration-ms="3662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- caseOne -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@708f5957]" started-at="2024-05-13T18:53:03 CEST" name="finish" finished-at="2024-05-13T18:53:03 CEST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@533bda92]" started-at="2024-05-15T17:37:02 CEST" name="finish" finished-at="2024-05-15T17:37:03 CEST" duration-ms="762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
-        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@708f5957]" started-at="2024-05-13T18:53:03 CEST" name="begin" finished-at="2024-05-13T18:53:05 CEST" duration-ms="2236" status="PASS">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@533bda92]" started-at="2024-05-15T17:37:03 CEST" name="begin" finished-at="2024-05-15T17:37:07 CEST" duration-ms="3605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- begin -->
-        <test-method signature="caseThree()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@708f5957]" started-at="2024-05-13T18:53:05 CEST" name="caseThree" finished-at="2024-05-13T18:53:07 CEST" duration-ms="1651" status="PASS">
+        <test-method signature="caseThree()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@533bda92]" started-at="2024-05-15T17:37:07 CEST" name="caseThree" finished-at="2024-05-15T17:37:10 CEST" duration-ms="2983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- caseThree -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@708f5957]" started-at="2024-05-13T18:53:07 CEST" name="finish" finished-at="2024-05-13T18:53:07 CEST" duration-ms="154" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@533bda92]" started-at="2024-05-15T17:37:10 CEST" name="finish" finished-at="2024-05-15T17:37:10 CEST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
-        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@708f5957]" started-at="2024-05-13T18:53:07 CEST" name="begin" finished-at="2024-05-13T18:53:09 CEST" duration-ms="2200" status="PASS">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@533bda92]" started-at="2024-05-15T17:37:10 CEST" name="begin" finished-at="2024-05-15T17:37:14 CEST" duration-ms="4276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- begin -->
-        <test-method signature="caseTwo()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@708f5957]" started-at="2024-05-13T18:53:09 CEST" name="caseTwo" finished-at="2024-05-13T18:53:11 CEST" duration-ms="1562" status="PASS">
+        <test-method signature="caseTwo()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@533bda92]" started-at="2024-05-15T17:37:14 CEST" name="caseTwo" finished-at="2024-05-15T17:37:17 CEST" duration-ms="2855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- caseTwo -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@708f5957]" started-at="2024-05-13T18:53:11 CEST" name="finish" finished-at="2024-05-13T18:53:11 CEST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@533bda92]" started-at="2024-05-15T17:37:17 CEST" name="finish" finished-at="2024-05-15T17:37:18 CEST" duration-ms="836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
       </class> <!-- SwagLabsProjectTests.ProdAddAndRemTest -->
+      <class name="SwagLabsProjectTests.StandAloneTest">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@353352b6]" started-at="2024-05-15T17:36:53 CEST" name="begin" finished-at="2024-05-15T17:36:59 CEST" duration-ms="5507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="firsTest()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@353352b6]" started-at="2024-05-15T17:36:59 CEST" name="firsTest" finished-at="2024-05-15T17:37:00 CEST" duration-ms="1802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firsTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@353352b6]" started-at="2024-05-15T17:37:00 CEST" name="finish" finished-at="2024-05-15T17:37:01 CEST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@353352b6]" started-at="2024-05-15T17:37:01 CEST" name="begin" finished-at="2024-05-15T17:37:04 CEST" duration-ms="3712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="secondTest()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@353352b6]" started-at="2024-05-15T17:37:04 CEST" name="secondTest" finished-at="2024-05-15T17:37:07 CEST" duration-ms="2163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@353352b6]" started-at="2024-05-15T17:37:07 CEST" name="finish" finished-at="2024-05-15T17:37:07 CEST" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- SwagLabsProjectTests.StandAloneTest -->
+      <class name="SwagLabsProjectTests.LoginTest">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:36:53 CEST" name="begin" finished-at="2024-05-15T17:36:59 CEST" duration-ms="5466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="emptyUserField()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:36:59 CEST" name="emptyUserField" finished-at="2024-05-15T17:36:59 CEST" duration-ms="574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUserField -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:36:59 CEST" name="finish" finished-at="2024-05-15T17:37:00 CEST" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:00 CEST" name="begin" finished-at="2024-05-15T17:37:04 CEST" duration-ms="4266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="incorrectPassword()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:04 CEST" name="incorrectPassword" finished-at="2024-05-15T17:37:04 CEST" duration-ms="421" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Epic sadface: IIUsername and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Epic sadface: IIUsername and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at SwagLabsProjectTests.LoginTest.incorrectPassword(LoginTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectPassword -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:04 CEST" name="finish" finished-at="2024-05-15T17:37:05 CEST" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:05 CEST" name="begin" finished-at="2024-05-15T17:37:08 CEST" duration-ms="3423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="incorrectUserAndPass()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:08 CEST" name="incorrectUserAndPass" finished-at="2024-05-15T17:37:09 CEST" duration-ms="658" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Epic sadface: IIUsername and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Epic sadface: IIUsername and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at SwagLabsProjectTests.LoginTest.incorrectUserAndPass(LoginTest.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectUserAndPass -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:09 CEST" name="finish" finished-at="2024-05-15T17:37:09 CEST" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:09 CEST" name="begin" finished-at="2024-05-15T17:37:13 CEST" duration-ms="3853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="incorrectUsername()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:13 CEST" name="incorrectUsername" finished-at="2024-05-15T17:37:14 CEST" duration-ms="422" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Epic sadface: IIUsername and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Epic sadface: IIUsername and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at SwagLabsProjectTests.LoginTest.incorrectUsername(LoginTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectUsername -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:14 CEST" name="finish" finished-at="2024-05-15T17:37:14 CEST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:14 CEST" name="begin" finished-at="2024-05-15T17:37:17 CEST" duration-ms="3398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="lockedUser()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:17 CEST" name="lockedUser" finished-at="2024-05-15T17:37:18 CEST" duration-ms="377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lockedUser -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:18 CEST" name="finish" finished-at="2024-05-15T17:37:18 CEST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:18 CEST" name="begin" finished-at="2024-05-15T17:37:20 CEST" duration-ms="2730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:20 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T17:37:21 CEST" duration-ms="406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:21 CEST" name="finish" finished-at="2024-05-15T17:37:21 CEST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:21 CEST" name="begin" finished-at="2024-05-15T17:37:24 CEST" duration-ms="3427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:24 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T17:37:25 CEST" duration-ms="445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:25 CEST" name="finish" finished-at="2024-05-15T17:37:25 CEST" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:25 CEST" name="begin" finished-at="2024-05-15T17:37:28 CEST" duration-ms="2671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:28 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T17:37:33 CEST" duration-ms="5442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:33 CEST" name="finish" finished-at="2024-05-15T17:37:33 CEST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:33 CEST" name="begin" finished-at="2024-05-15T17:37:36 CEST" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:36 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T17:37:36 CEST" duration-ms="383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[error_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:36 CEST" name="finish" finished-at="2024-05-15T17:37:36 CEST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:36 CEST" name="begin" finished-at="2024-05-15T17:37:39 CEST" duration-ms="2322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:39 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T17:37:39 CEST" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@7fd50002]" started-at="2024-05-15T17:37:39 CEST" name="finish" finished-at="2024-05-15T17:37:39 CEST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- SwagLabsProjectTests.LoginTest -->
     </test> <!-- Test -->
-  </suite> <!-- LoginTests -->
+  </suite> <!-- Regression -->
 </testng-results>
