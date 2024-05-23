@@ -38,17 +38,15 @@ public class ProductPriceConsistencyTest extends BaseTest {
 		productsPage.addProduct(productOne);
 		productsPage.addProduct(productTwo);
 
-	 	CartPage cP = new CartPage(driver);
+	 	CartPage cartPage = new CartPage(driver);
 
-	 	String sum = cP.getAllCartPrices();
-//		System.out.println(sum);
+	 	String sum = cartPage.getAllCartPrices();
 
-		CheckoutInformationPage cip = new CheckoutInformationPage(driver);
-		cip.EnterInformations(firstName, lastName, postalCode);
+		CheckoutInformationPage checkoutInfoPage = new CheckoutInformationPage(driver);
+		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
 
-		CheckoutOwerviewPage coPage = new CheckoutOwerviewPage(driver);
-		String finalSum = coPage.checkoutItemPrice();
-//		System.out.println(finalSum);
+		CheckoutOwerviewPage checkoutOwerviewPage = new CheckoutOwerviewPage(driver);
+		String finalSum = checkoutOwerviewPage.checkoutItemPrice();
 
 		Assert.assertEquals(sum, finalSum);
 
@@ -65,18 +63,15 @@ public class ProductPriceConsistencyTest extends BaseTest {
 		productsPage.addProduct(productOne);
 		productsPage.addProduct(productTwo);
 
-	 	CartPage cP = new CartPage(driver);
+	 	CartPage cartPage = new CartPage(driver);
 
-	 	String sum = cP.getAllCartPrices();
-//		System.out.println(sum);
+	 	String sum = cartPage.getAllCartPrices();
 
-		CheckoutInformationPage cip = new CheckoutInformationPage(driver);
-		cip.EnterInformations(firstName, lastName, postalCode);
+		CheckoutInformationPage checkoutInfoPage = new CheckoutInformationPage(driver);
+		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
 
 		CheckoutOwerviewPage coPage = new CheckoutOwerviewPage(driver);
 		String finalSum = coPage.checkoutItemPrice();
-
-//		System.out.println(finalSum);
 
 		Assert.assertEquals(sum, finalSum);
 
@@ -84,14 +79,12 @@ public class ProductPriceConsistencyTest extends BaseTest {
 
 		productsPage.backToProductPage();
 
-		cP.removeProd(productOne);
+		cartPage.removeProd(productOne);
 		productsPage.addProduct(productFive);
 
-		sum = cP.getAllCartPrices();
-//		System.out.println(sum);
-		cip.EnterInformations(firstName, lastName, postalCode);
+		sum = cartPage.getAllCartPrices();
+		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
 		finalSum = coPage.checkoutItemPrice();
-//		System.out.println(finalSum);
 
 		Assert.assertEquals(sum, finalSum);
 	}
@@ -107,33 +100,29 @@ public class ProductPriceConsistencyTest extends BaseTest {
 		productsPage.addProduct(productOne);
 		productsPage.addProduct(productTwo);
 
-	 	CartPage cP = new CartPage(driver);
+	 	CartPage cartPage = new CartPage(driver);
 
-	 	String sum = cP.getAllCartPrices();
-//		System.out.println(sum);
+	 	String sum = cartPage.getAllCartPrices();
 
-		CheckoutInformationPage cip = new CheckoutInformationPage(driver);
-		cip.EnterInformations(firstName, lastName, postalCode);
+		CheckoutInformationPage checkoutInfoPage = new CheckoutInformationPage(driver);
+		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
 
 		CheckoutOwerviewPage coPage = new CheckoutOwerviewPage(driver);
 		String finalSum = coPage.checkoutItemPrice();
 
-//		System.out.println(finalSum);
-
 		Assert.assertEquals(sum, finalSum);
 
 		// product modification
 
 		productsPage.backToProductPage();
 
-		cP.removeProd(productOne);
+		cartPage.removeProd(productOne);
 		productsPage.addProduct(productFive);
 
-		sum = cP.getAllCartPrices();
-//		System.out.println(sum);
-		cip.EnterInformations(firstName, lastName, postalCode);
+		sum = cartPage.getAllCartPrices();
+		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
+		
 		finalSum = coPage.checkoutItemPrice();
-//		System.out.println(finalSum);
 
 		Assert.assertEquals(sum, finalSum);
 
@@ -141,17 +130,15 @@ public class ProductPriceConsistencyTest extends BaseTest {
 
 		productsPage.backToProductPage();
 
-		cP.removeProd(productFive);
-		cP.removeProd(productTwo);
+		cartPage.removeProd(productFive);
+		cartPage.removeProd(productTwo);
 		productsPage.addProduct(productThree);
 		productsPage.addProduct(productFour);
 		productsPage.addProduct(productSix);
 
-		sum = cP.getAllCartPrices();
-//		System.out.println(sum);
-		cip.EnterInformations(firstName, lastName, postalCode);
+		sum = cartPage.getAllCartPrices();
+		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
 		finalSum = coPage.checkoutItemPrice();
-//		System.out.println(finalSum);
 
 		Assert.assertEquals(sum, finalSum);
 

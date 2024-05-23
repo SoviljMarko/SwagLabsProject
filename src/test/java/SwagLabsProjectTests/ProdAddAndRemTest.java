@@ -24,64 +24,64 @@ public class ProdAddAndRemTest extends BaseTest {
 
 	@Test
 	public void caseOne() {
-		LoginPage lp = new LoginPage(driver);
-		lp.LogIn();
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.LogIn();
 
-		ProductsPage pp = new ProductsPage(driver);
-		pp.addProduct(productOne);
-		pp.addProduct(productFive);
-		pp.addProduct(productThree);
+		ProductsPage productsPage = new ProductsPage(driver);
+		productsPage.addProduct(productOne);
+		productsPage.addProduct(productFive);
+		productsPage.addProduct(productThree);
 
-		CartPage cp = new CartPage(driver);
-		cp.removeProd(productFive);
+		CartPage cartPage = new CartPage(driver);
+		cartPage.removeProd(productFive);
 
-		pp.addProduct(productFive);
-		pp.addProduct(productTwo);
+		productsPage.addProduct(productFive);
+		productsPage.addProduct(productTwo);
 
-		cp.removeProd(productOne);
-		cp.removeProd(productFive);
-		cp.removeProd(productThree);
+		cartPage.removeProd(productOne);
+		cartPage.removeProd(productFive);
+		cartPage.removeProd(productThree);
 	}
 
 	@Test
 	public void caseTwo() {
-		LoginPage lp = new LoginPage(driver);
-		lp.LogIn();
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.LogIn();
 
-		ProductsPage pp = new ProductsPage(driver);
-		pp.addProduct(productSix);
-		pp.addProduct(productTwo);
-		pp.addProduct(productThree);
+		ProductsPage productsPage = new ProductsPage(driver);
+		productsPage.addProduct(productSix);
+		productsPage.addProduct(productTwo);
+		productsPage.addProduct(productThree);
 
-		CartPage cp = new CartPage(driver);
-		cp.removeProd(productTwo);
+		CartPage cartPage = new CartPage(driver);
+		cartPage.removeProd(productTwo);
 
-		pp.addProduct(productFive);
-		pp.addProduct(productOne);
+		productsPage.addProduct(productFive);
+		productsPage.addProduct(productOne);
 
-		cp.removeProd(productOne);
+		cartPage.removeProd(productOne);
 
 	}
 
 	@Test
 	public void caseThree() {
-		LoginPage lp = new LoginPage(driver);
-		lp.LogIn();
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.LogIn();
 
-		ProductsPage pp = new ProductsPage(driver);
-		pp.addProduct(productOne);
-
-
-		CartPage cp = new CartPage(driver);
-		cp.removeProd(productOne);
-
-		pp.addProduct(productSix);
-		pp.addProduct(productFour);
-		pp.addProduct(productFive);
+		ProductsPage productsPage = new ProductsPage(driver);
+		productsPage.addProduct(productOne);
 
 
-		cp.removeProd(productFive);
-		cp.removeProd(productSix);
+		CartPage cartPage = new CartPage(driver);
+		cartPage.removeProd(productOne);
+
+		productsPage.addProduct(productSix);
+		productsPage.addProduct(productFour);
+		productsPage.addProduct(productFive);
+
+
+		cartPage.removeProd(productFive);
+		cartPage.removeProd(productSix);
 	}
 
 

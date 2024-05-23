@@ -25,47 +25,47 @@ public class LoginTest extends BaseTest {
 
 	@Test(dataProvider="getData")
 	public void pullingDataForLogin(String username, String password) throws InterruptedException {
-		LoginPage lp = new LoginPage(driver);
-		lp.LogIn(username, password);
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.LogIn(username, password);
 
-		Assert.assertTrue(lp.waitForProductTitle() != null);
+		Assert.assertTrue(loginPage.waitForProductTitle() != null);
 
 	}
 
 
 	@Test
 	public void incorrectUsername() {
-		LoginPage lp = new LoginPage(driver);
-		lp.LogIn(invalidUser, validPass);
-		Assert.assertEquals(lp.loginErrorMessageCheck(), errorMessage);
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.LogIn(invalidUser, validPass);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), errorMessage);
 	}
 
 	@Test
 	public void incorrectPassword() {
-		LoginPage lp = new LoginPage(driver);
-		lp.LogIn(validUser, invalidPass);
-		Assert.assertEquals(lp.loginErrorMessageCheck(), errorMessage);
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.LogIn(validUser, invalidPass);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), errorMessage);
 	}
 
 	@Test
 	public void incorrectUserAndPass() {
-		LoginPage lp = new LoginPage(driver);
-		lp.LogIn(invalidUser, invalidPass);
-		Assert.assertEquals(lp.loginErrorMessageCheck(), errorMessage);
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.LogIn(invalidUser, invalidPass);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), errorMessage);
 	}
 
 	@Test
 	public void lockedUser() {
-		LoginPage lp = new LoginPage(driver);
-		lp.LogIn(blockedUser, validPass);
-		Assert.assertEquals(lp.loginErrorMessageCheck(), lockedUserMessage);
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.LogIn(blockedUser, validPass);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), lockedUserMessage);
 	}
 
 	@Test
 	public void emptyUserField() {
-		LoginPage lp = new LoginPage(driver);
-		lp.LogIn(emptyUser, validPass);
-		Assert.assertEquals(lp.loginErrorMessageCheck(), emptyUserMessage);
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.LogIn(emptyUser, validPass);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), emptyUserMessage);
 	}
 
 
