@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import TestComponents.BaseTest;
 import TestComponents.TestComponents;
 import markoSovilj.SwagLabsProject.CartPage;
 import markoSovilj.SwagLabsProject.CheckoutInformationPage;
@@ -13,9 +14,7 @@ import markoSovilj.SwagLabsProject.CheckoutOwerviewPage;
 import markoSovilj.SwagLabsProject.LoginPage;
 import markoSovilj.SwagLabsProject.ProductsPage;
 
-public class ProductPriceConsistencyTest extends TestComponents {
-
-	WebDriver driver;
+public class ProductPriceConsistencyTest extends BaseTest {
 
 	String productOne = "Backpack";
 	String productTwo = "Bike Light";
@@ -158,15 +157,5 @@ public class ProductPriceConsistencyTest extends TestComponents {
 
 	}
 
-
-	@BeforeMethod
-	public void begin() {
-		driver = Initialization();
-	}
-
-	@AfterMethod
-	public void finish() {
-		driver.close();
-	}
 
 }

@@ -8,31 +8,18 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class TestComponents {
-	
-	
 
-	public WebDriver Initialization() {
-//		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		
-//		this.driver = driver;
-		
-		driver.get("https://www.saucedemo.com/");
-		driver.manage().window().maximize();
-		return driver;
-	}
 	
-
-	public SoftAssert softAssertions() {
-		SoftAssert soft = new SoftAssert();
-		return soft;
-	}
 	
 	public static ExtentReports ExtentReporter() {
 		String path = System.getProperty("user.dir") + "//reports//index.html";
@@ -56,5 +43,6 @@ public class TestComponents {
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
 	}
 
+	
 
 }

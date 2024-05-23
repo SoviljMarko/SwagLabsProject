@@ -37,20 +37,20 @@ public class Listeners extends TestComponents implements ITestListener{
 		test.log(Status.FAIL, "Test fail");
 		test.fail(result.getThrowable());
 		
-//		try {
-//			this.driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
-//		} catch (Exception e1){
-//			e1.printStackTrace();
-//		}
-//		
-//		String filePath = null;
-//		try {
-//			filePath = getScreenshot(result.getMethod().getMethodName(), driver);
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+		try {
+			this.driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+		} catch (Exception e1){
+			e1.printStackTrace();
+		}
+		
+		String filePath = null;
+		try {
+			filePath = getScreenshot(result.getMethod().getMethodName(), driver);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
 		
 	}
 

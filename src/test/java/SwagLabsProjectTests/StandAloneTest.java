@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import TestComponents.BaseTest;
 import TestComponents.TestComponents;
 import markoSovilj.SwagLabsProject.CartPage;
 import markoSovilj.SwagLabsProject.CheckoutInformationPage;
@@ -17,9 +18,7 @@ import markoSovilj.SwagLabsProject.ProductsPage;
 
 
 
-public class StandAloneTest extends TestComponents {
-
-	WebDriver driver;
+public class StandAloneTest extends BaseTest {
 
 	String productOne = "Backpack";
 	String productTwo = "Bike Light";
@@ -91,17 +90,6 @@ public class StandAloneTest extends TestComponents {
 		OrderCompletePage orderComplete = new OrderCompletePage(driver);
 		Assert.assertEquals(orderComplete.CheckoutComplete(), "Thank you for your order!");
 
-	}
-
-	@BeforeMethod
-	public void begin() {
-
-		driver = Initialization();
-	}
-
-	@AfterMethod
-	public void finish() {
-		driver.close();
 	}
 
 

@@ -1,19 +1,14 @@
 package SwagLabsProjectTests;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import TestComponents.TestComponents;
+import TestComponents.BaseTest;
 import markoSovilj.SwagLabsProject.LoginPage;
 
-public class LoginTest extends TestComponents {
-
-	WebDriver driver;
+public class LoginTest extends BaseTest {
 
     String invalidUser = "unknown_user";
 	String invalidPass = "abcd1234";
@@ -102,14 +97,14 @@ public class LoginTest extends TestComponents {
 	}
 
 
-	@BeforeMethod
-	public void begin() {
-		driver = Initialization();
-	}
-
-	@AfterMethod
-	public void finish() {
-		driver.close();
-	}
+//	@BeforeMethod
+//	public void begin() {
+//		driver = Initialization();
+//	}
+//
+//	@AfterMethod
+//	public void finish() {
+//		driver.close();
+//	}
 
 }

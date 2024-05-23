@@ -5,10 +5,12 @@
     <classes>
       <class name="SwagLabsProjectTests.LoginTest">
         <methods>
-          <include name="begin"/>
+          <include name="finish"/>
           <include name="incorrectPassword"/>
           <include name="incorrectUserAndPass"/>
-          <include name="finish"/>
+          <include name="begin"/>
+          <include name="lockedUser"/>
+          <include name="emptyUserField"/>
           <include name="incorrectUsername"/>
         </methods>
       </class> <!-- SwagLabsProjectTests.LoginTest -->

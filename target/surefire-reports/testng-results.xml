@@ -1,49 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-13T18:57:43 CEST" name="LoginTests" finished-at="2024-05-13T18:57:55 CEST" duration-ms="12603">
+  <suite started-at="2024-05-15T18:01:09 CEST" name="Surefire suite" finished-at="2024-05-15T18:02:17 CEST" duration-ms="67844">
     <groups>
     </groups>
-    <test started-at="2024-05-13T18:57:43 CEST" name="Test" finished-at="2024-05-13T18:57:55 CEST" duration-ms="12603">
-      <class name="SwagLabsProjectTests.ProdAddAndRemTest">
-        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@47542153]" started-at="2024-05-13T18:57:43 CEST" name="begin" finished-at="2024-05-13T18:57:45 CEST" duration-ms="2538" status="PASS">
+    <test started-at="2024-05-15T18:01:09 CEST" name="Surefire test" finished-at="2024-05-15T18:02:17 CEST" duration-ms="67844">
+      <class name="SwagLabsProjectTests.ProductPriceConsistencyTest">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@6ee12bac]" started-at="2024-05-15T18:01:56 CEST" name="begin" finished-at="2024-05-15T18:01:59 CEST" duration-ms="2394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- begin -->
-        <test-method signature="caseOne()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@47542153]" started-at="2024-05-13T18:57:45 CEST" name="caseOne" finished-at="2024-05-13T18:57:47 CEST" duration-ms="2091" status="PASS">
+        <test-method signature="fitstTest()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@6ee12bac]" started-at="2024-05-15T18:01:59 CEST" name="fitstTest" finished-at="2024-05-15T18:02:00 CEST" duration-ms="1084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fitstTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@6ee12bac]" started-at="2024-05-15T18:02:00 CEST" name="finish" finished-at="2024-05-15T18:02:00 CEST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@6ee12bac]" started-at="2024-05-15T18:02:00 CEST" name="begin" finished-at="2024-05-15T18:02:02 CEST" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="secondTest()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@6ee12bac]" started-at="2024-05-15T18:02:02 CEST" name="secondTest" finished-at="2024-05-15T18:02:04 CEST" duration-ms="1854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@6ee12bac]" started-at="2024-05-15T18:02:04 CEST" name="finish" finished-at="2024-05-15T18:02:04 CEST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@6ee12bac]" started-at="2024-05-15T18:02:04 CEST" name="begin" finished-at="2024-05-15T18:02:07 CEST" duration-ms="2439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="thirdTest()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@6ee12bac]" started-at="2024-05-15T18:02:07 CEST" name="thirdTest" finished-at="2024-05-15T18:02:10 CEST" duration-ms="3054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProductPriceConsistencyTest@6ee12bac]" started-at="2024-05-15T18:02:10 CEST" name="finish" finished-at="2024-05-15T18:02:10 CEST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- SwagLabsProjectTests.ProductPriceConsistencyTest -->
+      <class name="SwagLabsProjectTests.ProdAddAndRemTest">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@157632c9]" started-at="2024-05-15T18:01:44 CEST" name="begin" finished-at="2024-05-15T18:01:46 CEST" duration-ms="2275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="caseOne()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@157632c9]" started-at="2024-05-15T18:01:46 CEST" name="caseOne" finished-at="2024-05-15T18:01:48 CEST" duration-ms="1832" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- caseOne -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@47542153]" started-at="2024-05-13T18:57:47 CEST" name="finish" finished-at="2024-05-13T18:57:48 CEST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@157632c9]" started-at="2024-05-15T18:01:48 CEST" name="finish" finished-at="2024-05-15T18:01:48 CEST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
-        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@47542153]" started-at="2024-05-13T18:57:48 CEST" name="begin" finished-at="2024-05-13T18:57:50 CEST" duration-ms="2166" status="PASS">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@157632c9]" started-at="2024-05-15T18:01:48 CEST" name="begin" finished-at="2024-05-15T18:01:51 CEST" duration-ms="2373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- begin -->
-        <test-method signature="caseThree()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@47542153]" started-at="2024-05-13T18:57:50 CEST" name="caseThree" finished-at="2024-05-13T18:57:51 CEST" duration-ms="1609" status="PASS">
+        <test-method signature="caseThree()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@157632c9]" started-at="2024-05-15T18:01:51 CEST" name="caseThree" finished-at="2024-05-15T18:01:52 CEST" duration-ms="1520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- caseThree -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@47542153]" started-at="2024-05-13T18:57:51 CEST" name="finish" finished-at="2024-05-13T18:57:51 CEST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@157632c9]" started-at="2024-05-15T18:01:52 CEST" name="finish" finished-at="2024-05-15T18:01:52 CEST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
-        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@47542153]" started-at="2024-05-13T18:57:51 CEST" name="begin" finished-at="2024-05-13T18:57:54 CEST" duration-ms="2253" status="PASS">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@157632c9]" started-at="2024-05-15T18:01:52 CEST" name="begin" finished-at="2024-05-15T18:01:55 CEST" duration-ms="2301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- begin -->
-        <test-method signature="caseTwo()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@47542153]" started-at="2024-05-13T18:57:54 CEST" name="caseTwo" finished-at="2024-05-13T18:57:55 CEST" duration-ms="1561" status="PASS">
+        <test-method signature="caseTwo()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@157632c9]" started-at="2024-05-15T18:01:55 CEST" name="caseTwo" finished-at="2024-05-15T18:01:56 CEST" duration-ms="1510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- caseTwo -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@47542153]" started-at="2024-05-13T18:57:55 CEST" name="finish" finished-at="2024-05-13T18:57:55 CEST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.ProdAddAndRemTest@157632c9]" started-at="2024-05-15T18:01:56 CEST" name="finish" finished-at="2024-05-15T18:01:56 CEST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
       </class> <!-- SwagLabsProjectTests.ProdAddAndRemTest -->
-    </test> <!-- Test -->
-  </suite> <!-- LoginTests -->
+      <class name="SwagLabsProjectTests.StandAloneTest">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@55040f2f]" started-at="2024-05-15T18:02:10 CEST" name="begin" finished-at="2024-05-15T18:02:12 CEST" duration-ms="2362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="firsTest()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@55040f2f]" started-at="2024-05-15T18:02:12 CEST" name="firsTest" finished-at="2024-05-15T18:02:13 CEST" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firsTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@55040f2f]" started-at="2024-05-15T18:02:13 CEST" name="finish" finished-at="2024-05-15T18:02:13 CEST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@55040f2f]" started-at="2024-05-15T18:02:13 CEST" name="begin" finished-at="2024-05-15T18:02:16 CEST" duration-ms="2361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="secondTest()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@55040f2f]" started-at="2024-05-15T18:02:16 CEST" name="secondTest" finished-at="2024-05-15T18:02:17 CEST" duration-ms="1147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.StandAloneTest@55040f2f]" started-at="2024-05-15T18:02:17 CEST" name="finish" finished-at="2024-05-15T18:02:17 CEST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- SwagLabsProjectTests.StandAloneTest -->
+      <class name="SwagLabsProjectTests.LoginTest">
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:09 CEST" name="begin" finished-at="2024-05-15T18:01:13 CEST" duration-ms="3490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="emptyUserField()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:13 CEST" name="emptyUserField" finished-at="2024-05-15T18:01:13 CEST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUserField -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:13 CEST" name="finish" finished-at="2024-05-15T18:01:13 CEST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:13 CEST" name="begin" finished-at="2024-05-15T18:01:15 CEST" duration-ms="2388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="incorrectPassword()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:15 CEST" name="incorrectPassword" finished-at="2024-05-15T18:01:16 CEST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectPassword -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:16 CEST" name="finish" finished-at="2024-05-15T18:01:16 CEST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:16 CEST" name="begin" finished-at="2024-05-15T18:01:18 CEST" duration-ms="2323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="incorrectUserAndPass()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:18 CEST" name="incorrectUserAndPass" finished-at="2024-05-15T18:01:19 CEST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectUserAndPass -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:19 CEST" name="finish" finished-at="2024-05-15T18:01:19 CEST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:19 CEST" name="begin" finished-at="2024-05-15T18:01:21 CEST" duration-ms="2298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="incorrectUsername()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:21 CEST" name="incorrectUsername" finished-at="2024-05-15T18:01:21 CEST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectUsername -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:21 CEST" name="finish" finished-at="2024-05-15T18:01:22 CEST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:22 CEST" name="begin" finished-at="2024-05-15T18:01:24 CEST" duration-ms="2381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="lockedUser()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:24 CEST" name="lockedUser" finished-at="2024-05-15T18:01:24 CEST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lockedUser -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:24 CEST" name="finish" finished-at="2024-05-15T18:01:24 CEST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:25 CEST" name="begin" finished-at="2024-05-15T18:01:27 CEST" duration-ms="2364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:27 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T18:01:27 CEST" duration-ms="417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:27 CEST" name="finish" finished-at="2024-05-15T18:01:27 CEST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:27 CEST" name="begin" finished-at="2024-05-15T18:01:30 CEST" duration-ms="2400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:30 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T18:01:30 CEST" duration-ms="377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:30 CEST" name="finish" finished-at="2024-05-15T18:01:30 CEST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:30 CEST" name="begin" finished-at="2024-05-15T18:01:33 CEST" duration-ms="2380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:33 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T18:01:38 CEST" duration-ms="5388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:38 CEST" name="finish" finished-at="2024-05-15T18:01:38 CEST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:38 CEST" name="begin" finished-at="2024-05-15T18:01:41 CEST" duration-ms="2426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:41 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T18:01:41 CEST" duration-ms="409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[error_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:41 CEST" name="finish" finished-at="2024-05-15T18:01:41 CEST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:41 CEST" name="begin" finished-at="2024-05-15T18:01:44 CEST" duration-ms="2463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="pullingDataForLogin(java.lang.String,java.lang.String)[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:44 CEST" name="pullingDataForLogin" data-provider="getData" finished-at="2024-05-15T18:01:44 CEST" duration-ms="385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullingDataForLogin -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:SwagLabsProjectTests.LoginTest@525b461a]" started-at="2024-05-15T18:01:44 CEST" name="finish" finished-at="2024-05-15T18:01:44 CEST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- SwagLabsProjectTests.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
