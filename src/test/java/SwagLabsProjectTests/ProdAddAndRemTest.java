@@ -10,6 +10,7 @@ import TestComponents.TestComponents;
 import markoSovilj.SwagLabsProject.CartPage;
 import markoSovilj.SwagLabsProject.LoginPage;
 import markoSovilj.SwagLabsProject.ProductsPage;
+import resources.TestConstants;
 
 public class ProdAddAndRemTest extends BaseTest {
 
@@ -28,19 +29,19 @@ public class ProdAddAndRemTest extends BaseTest {
 		loginPage.LogIn();
 
 		ProductsPage productsPage = new ProductsPage(driver);
-		productsPage.addProduct(productOne);
-		productsPage.addProduct(productFive);
-		productsPage.addProduct(productThree);
+		productsPage.addProduct(TestConstants.PRODUCT_ONE);
+		productsPage.addProduct(TestConstants.PRODUCT_FIVE);
+		productsPage.addProduct(TestConstants.PRODUCT_THREE);
 
 		CartPage cartPage = new CartPage(driver);
-		cartPage.removeProd(productFive);
+		cartPage.removeProd(TestConstants.PRODUCT_FIVE);
 
-		productsPage.addProduct(productFive);
-		productsPage.addProduct(productTwo);
+		productsPage.addProduct(TestConstants.PRODUCT_FIVE);
+		productsPage.addProduct(TestConstants.PRODUCT_TWO);
 
-		cartPage.removeProd(productOne);
-		cartPage.removeProd(productFive);
-		cartPage.removeProd(productThree);
+		cartPage.removeProd(TestConstants.PRODUCT_ONE);
+		cartPage.removeProd(TestConstants.PRODUCT_FIVE);
+		cartPage.removeProd(TestConstants.PRODUCT_THREE);
 	}
 
 	@Test
@@ -49,17 +50,17 @@ public class ProdAddAndRemTest extends BaseTest {
 		loginPage.LogIn();
 
 		ProductsPage productsPage = new ProductsPage(driver);
-		productsPage.addProduct(productSix);
-		productsPage.addProduct(productTwo);
-		productsPage.addProduct(productThree);
+		productsPage.addProduct(TestConstants.PRODUCT_SIX);
+		productsPage.addProduct(TestConstants.PRODUCT_TWO);
+		productsPage.addProduct(TestConstants.PRODUCT_THREE);
 
 		CartPage cartPage = new CartPage(driver);
-		cartPage.removeProd(productTwo);
+		cartPage.removeProd(TestConstants.PRODUCT_TWO);
 
-		productsPage.addProduct(productFive);
-		productsPage.addProduct(productOne);
+		productsPage.addProduct(TestConstants.PRODUCT_FIVE);
+		productsPage.addProduct(TestConstants.PRODUCT_ONE);
 
-		cartPage.removeProd(productOne);
+		cartPage.removeProd(TestConstants.PRODUCT_ONE);
 
 	}
 
@@ -69,19 +70,19 @@ public class ProdAddAndRemTest extends BaseTest {
 		loginPage.LogIn();
 
 		ProductsPage productsPage = new ProductsPage(driver);
-		productsPage.addProduct(productOne);
+		productsPage.addProduct(TestConstants.PRODUCT_ONE);
 
 
 		CartPage cartPage = new CartPage(driver);
-		cartPage.removeProd(productOne);
+		cartPage.removeProd(TestConstants.PRODUCT_ONE);
 
-		productsPage.addProduct(productSix);
-		productsPage.addProduct(productFour);
-		productsPage.addProduct(productFive);
+		productsPage.addProduct(TestConstants.PRODUCT_SIX);
+		productsPage.addProduct(TestConstants.PRODUCT_FOUR);
+		productsPage.addProduct(TestConstants.PRODUCT_FIVE);
 
 
-		cartPage.removeProd(productFive);
-		cartPage.removeProd(productSix);
+		cartPage.removeProd(TestConstants.PRODUCT_FIVE);
+		cartPage.removeProd(TestConstants.PRODUCT_SIX);
 	}
 
 

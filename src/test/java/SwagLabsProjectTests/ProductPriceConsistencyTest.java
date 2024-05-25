@@ -3,6 +3,7 @@ package SwagLabsProjectTests;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -13,19 +14,10 @@ import markoSovilj.SwagLabsProject.CheckoutInformationPage;
 import markoSovilj.SwagLabsProject.CheckoutOwerviewPage;
 import markoSovilj.SwagLabsProject.LoginPage;
 import markoSovilj.SwagLabsProject.ProductsPage;
+import resources.ConfigLoader;
+import resources.TestConstants;
 
 public class ProductPriceConsistencyTest extends BaseTest {
-
-	String productOne = "Backpack";
-	String productTwo = "Bike Light";
-	String productThree = "Bolt T-Shirt";
-	String productFour = "Fleece Jacket";
-	String productFive = "Onesie";
-	String productSix = "T-Shirt (Red)";
-
-	String firstName = "John";
-	String lastName = "Wick";
-	String postalCode = "123456";
 
 
 	@Test
@@ -35,15 +27,15 @@ public class ProductPriceConsistencyTest extends BaseTest {
 		loginPage.LogIn();
 
 		ProductsPage productsPage = new ProductsPage(driver);
-		productsPage.addProduct(productOne);
-		productsPage.addProduct(productTwo);
+		productsPage.addProduct(TestConstants.PRODUCT_ONE);
+		productsPage.addProduct(TestConstants.PRODUCT_TWO);
 
 	 	CartPage cartPage = new CartPage(driver);
 
 	 	String sum = cartPage.getAllCartPrices();
 
 		CheckoutInformationPage checkoutInfoPage = new CheckoutInformationPage(driver);
-		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
+		checkoutInfoPage.EnterInformations(TestConstants.FIRST_NAME, TestConstants.LAST_NAME, TestConstants.POSTAL_CODE);
 
 		CheckoutOwerviewPage checkoutOwerviewPage = new CheckoutOwerviewPage(driver);
 		String finalSum = checkoutOwerviewPage.checkoutItemPrice();
@@ -60,15 +52,15 @@ public class ProductPriceConsistencyTest extends BaseTest {
 		loginPage.LogIn();
 
 		ProductsPage productsPage = new ProductsPage(driver);
-		productsPage.addProduct(productOne);
-		productsPage.addProduct(productTwo);
+		productsPage.addProduct(TestConstants.PRODUCT_ONE);
+		productsPage.addProduct(TestConstants.PRODUCT_TWO);
 
 	 	CartPage cartPage = new CartPage(driver);
 
 	 	String sum = cartPage.getAllCartPrices();
 
 		CheckoutInformationPage checkoutInfoPage = new CheckoutInformationPage(driver);
-		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
+		checkoutInfoPage.EnterInformations(TestConstants.FIRST_NAME, TestConstants.LAST_NAME, TestConstants.POSTAL_CODE);
 
 		CheckoutOwerviewPage coPage = new CheckoutOwerviewPage(driver);
 		String finalSum = coPage.checkoutItemPrice();
@@ -79,11 +71,11 @@ public class ProductPriceConsistencyTest extends BaseTest {
 
 		productsPage.backToProductPage();
 
-		cartPage.removeProd(productOne);
-		productsPage.addProduct(productFive);
+		cartPage.removeProd(TestConstants.PRODUCT_ONE);
+		productsPage.addProduct(TestConstants.PRODUCT_FIVE);
 
 		sum = cartPage.getAllCartPrices();
-		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
+		checkoutInfoPage.EnterInformations(TestConstants.FIRST_NAME, TestConstants.LAST_NAME, TestConstants.POSTAL_CODE);
 		finalSum = coPage.checkoutItemPrice();
 
 		Assert.assertEquals(sum, finalSum);
@@ -97,15 +89,15 @@ public class ProductPriceConsistencyTest extends BaseTest {
 		loginPage.LogIn();
 
 		ProductsPage productsPage = new ProductsPage(driver);
-		productsPage.addProduct(productOne);
-		productsPage.addProduct(productTwo);
+		productsPage.addProduct(TestConstants.PRODUCT_ONE);
+		productsPage.addProduct(TestConstants.PRODUCT_TWO);
 
 	 	CartPage cartPage = new CartPage(driver);
 
 	 	String sum = cartPage.getAllCartPrices();
 
 		CheckoutInformationPage checkoutInfoPage = new CheckoutInformationPage(driver);
-		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
+		checkoutInfoPage.EnterInformations(TestConstants.FIRST_NAME, TestConstants.LAST_NAME, TestConstants.POSTAL_CODE);
 
 		CheckoutOwerviewPage coPage = new CheckoutOwerviewPage(driver);
 		String finalSum = coPage.checkoutItemPrice();
@@ -116,11 +108,11 @@ public class ProductPriceConsistencyTest extends BaseTest {
 
 		productsPage.backToProductPage();
 
-		cartPage.removeProd(productOne);
-		productsPage.addProduct(productFive);
+		cartPage.removeProd(TestConstants.PRODUCT_ONE);
+		productsPage.addProduct(TestConstants.PRODUCT_FIVE);
 
 		sum = cartPage.getAllCartPrices();
-		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
+		checkoutInfoPage.EnterInformations(TestConstants.FIRST_NAME, TestConstants.LAST_NAME, TestConstants.POSTAL_CODE);
 		
 		finalSum = coPage.checkoutItemPrice();
 
@@ -130,14 +122,14 @@ public class ProductPriceConsistencyTest extends BaseTest {
 
 		productsPage.backToProductPage();
 
-		cartPage.removeProd(productFive);
-		cartPage.removeProd(productTwo);
-		productsPage.addProduct(productThree);
-		productsPage.addProduct(productFour);
-		productsPage.addProduct(productSix);
+		cartPage.removeProd(TestConstants.PRODUCT_FIVE);
+		cartPage.removeProd(TestConstants.PRODUCT_TWO);
+		productsPage.addProduct(TestConstants.PRODUCT_THREE);
+		productsPage.addProduct(TestConstants.PRODUCT_FOUR);
+		productsPage.addProduct(TestConstants.PRODUCT_SIX);
 
 		sum = cartPage.getAllCartPrices();
-		checkoutInfoPage.EnterInformations(firstName, lastName, postalCode);
+		checkoutInfoPage.EnterInformations(TestConstants.FIRST_NAME, TestConstants.LAST_NAME, TestConstants.POSTAL_CODE);
 		finalSum = coPage.checkoutItemPrice();
 
 		Assert.assertEquals(sum, finalSum);

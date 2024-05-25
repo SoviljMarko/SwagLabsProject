@@ -7,21 +7,10 @@ import org.testng.annotations.Test;
 
 import TestComponents.BaseTest;
 import markoSovilj.SwagLabsProject.LoginPage;
+import resources.TestConstants;
 
 public class LoginTest extends BaseTest {
 
-    String invalidUser = "unknown_user";
-	String invalidPass = "abcd1234";
-	String validUser = "standard_user";
-	String validPass = "secret_sauce";
-	String blockedUser = "locked_out_user";
-	String emptyUser = "";
-
-	String errorMessage = "Epic sadface: Username and password do not match any user in this service";
-	String lockedUserMessage = "Epic sadface: Sorry, this user has been locked out.";
-	String emptyUserMessage = "Epic sadface: Username is required";
-
-	WebElement titleElement;
 
 	@Test(dataProvider="getData")
 	public void pullingDataForLogin(String username, String password) throws InterruptedException {
@@ -36,36 +25,36 @@ public class LoginTest extends BaseTest {
 	@Test
 	public void incorrectUsername() {
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.LogIn(invalidUser, validPass);
-		Assert.assertEquals(loginPage.loginErrorMessageCheck(), errorMessage);
+		loginPage.LogIn(TestConstants.INVALID_USER, TestConstants.VALID_PASS);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), TestConstants.ERROR_MESSAGE);
 	}
 
 	@Test
 	public void incorrectPassword() {
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.LogIn(validUser, invalidPass);
-		Assert.assertEquals(loginPage.loginErrorMessageCheck(), errorMessage);
+		loginPage.LogIn(TestConstants.VALID_USER,TestConstants.INVALID_PASS);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), TestConstants.ERROR_MESSAGE);
 	}
 
 	@Test
 	public void incorrectUserAndPass() {
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.LogIn(invalidUser, invalidPass);
-		Assert.assertEquals(loginPage.loginErrorMessageCheck(), errorMessage);
+		loginPage.LogIn(TestConstants.INVALID_USER, TestConstants.INVALID_PASS);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), TestConstants.ERROR_MESSAGE);
 	}
 
 	@Test
 	public void lockedUser() {
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.LogIn(blockedUser, validPass);
-		Assert.assertEquals(loginPage.loginErrorMessageCheck(), lockedUserMessage);
+		loginPage.LogIn(TestConstants.BLOCKED_USER, TestConstants.VALID_PASS);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), TestConstants.LOCKED_USER_MESSAGE);
 	}
 
 	@Test
 	public void emptyUserField() {
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.LogIn(emptyUser, validPass);
-		Assert.assertEquals(loginPage.loginErrorMessageCheck(), emptyUserMessage);
+		loginPage.LogIn(TestConstants.EMPTY_USER, TestConstants.VALID_PASS);
+		Assert.assertEquals(loginPage.loginErrorMessageCheck(), TestConstants.EMPTY_USER_MESSAGE);
 	}
 
 

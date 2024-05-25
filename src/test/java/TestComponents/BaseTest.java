@@ -3,8 +3,11 @@ package TestComponents;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
+
+import resources.ConfigLoader;
 
 public class BaseTest {
 	
@@ -33,5 +36,10 @@ public class BaseTest {
 	public void finish() {
 		driver.close();
 	}
+	
+//	@BeforeClass
+//    public static ConfigLoader setUp() {
+//        return new ConfigLoader();
+//    }
 	
 }

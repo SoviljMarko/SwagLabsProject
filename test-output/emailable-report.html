@@ -8,13 +8,49 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,374</td><td></td><td></td></tr>
+<tr><th colspan="8">Regression</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">15</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">64,787</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">SwagLabsProjectTests.ProdAddAndRemTest</td><td><a href="#m0">caseOne</a></td><td rowspan="1">1716475140383</td><td rowspan="1">1909</td></tr><tr class="passedeven"><td><a href="#m1">caseThree</a></td><td rowspan="1">1716475144715</td><td rowspan="1">1511</td></tr><tr class="passedeven"><td><a href="#m2">caseTwo</a></td><td rowspan="1">1716475148584</td><td rowspan="1">1484</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">SwagLabsProjectTests.LoginTest</td><td><a href="#m0">incorrectPassword</a></td><td rowspan="1">1716653873790</td><td rowspan="1">316</td></tr><tr class="failedeven"><td><a href="#m1">incorrectUserAndPass</a></td><td rowspan="1">1716653876682</td><td rowspan="1">335</td></tr><tr class="failedeven"><td><a href="#m2">incorrectUsername</a></td><td rowspan="1">1716653879582</td><td rowspan="1">335</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">SwagLabsProjectTests.LoginTest</td><td><a href="#m3">emptyUserField</a></td><td rowspan="1">1716653871194</td><td rowspan="1">305</td></tr><tr class="passedeven"><td><a href="#m4">lockedUser</a></td><td rowspan="1">1716653882421</td><td rowspan="1">331</td></tr><tr class="passedeven"><td><a href="#m5">pullingDataForLogin</a></td><td rowspan="5">1716653887837</td><td rowspan="5">339</td></tr><tr class="passedeven"><td><a href="#m6">pullingDataForLogin</a></td></tr><tr class="passedeven"><td><a href="#m7">pullingDataForLogin</a></td></tr><tr class="passedeven"><td><a href="#m8">pullingDataForLogin</a></td></tr><tr class="passedeven"><td><a href="#m9">pullingDataForLogin</a></td></tr><tr class="passedodd"><td rowspan="3">SwagLabsProjectTests.ProdAddAndRemTest</td><td><a href="#m10">caseOne</a></td><td rowspan="1">1716653903941</td><td rowspan="1">1738</td></tr><tr class="passedodd"><td><a href="#m11">caseThree</a></td><td rowspan="1">1716653908153</td><td rowspan="1">1427</td></tr><tr class="passedodd"><td><a href="#m12">caseTwo</a></td><td rowspan="1">1716653912038</td><td rowspan="1">1388</td></tr><tr class="passedeven"><td rowspan="3">SwagLabsProjectTests.ProductPriceConsistencyTest</td><td><a href="#m13">fitstTest</a></td><td rowspan="1">1716653915781</td><td rowspan="1">978</td></tr><tr class="passedeven"><td><a href="#m14">secondTest</a></td><td rowspan="1">1716653919281</td><td rowspan="1">1702</td></tr><tr class="passedeven"><td><a href="#m15">thirdTest</a></td><td rowspan="1">1716653923287</td><td rowspan="1">2916</td></tr><tr class="passedodd"><td rowspan="2">SwagLabsProjectTests.StandAloneTest</td><td><a href="#m16">firsTest</a></td><td rowspan="1">1716653864135</td><td rowspan="1">1151</td></tr><tr class="passedodd"><td><a href="#m17">secondTest</a></td><td rowspan="1">1716653867674</td><td rowspan="1">1226</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">SwagLabsProjectTests.ProdAddAndRemTest#caseOne</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">SwagLabsProjectTests.ProdAddAndRemTest#caseThree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">SwagLabsProjectTests.ProdAddAndRemTest#caseTwo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">SwagLabsProjectTests.LoginTest#incorrectPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this seeervice] but found [Epic sadface: Username and password do not match any user in this service]
+	at SwagLabsProjectTests.LoginTest.incorrectPassword(LoginTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">SwagLabsProjectTests.LoginTest#incorrectUserAndPass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this seeervice] but found [Epic sadface: Username and password do not match any user in this service]
+	at SwagLabsProjectTests.LoginTest.incorrectUserAndPass(LoginTest.java:43)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">SwagLabsProjectTests.LoginTest#incorrectUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this seeervice] but found [Epic sadface: Username and password do not match any user in this service]
+	at SwagLabsProjectTests.LoginTest.incorrectUsername(LoginTest.java:29)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">SwagLabsProjectTests.LoginTest#emptyUserField</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">SwagLabsProjectTests.LoginTest#lockedUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">SwagLabsProjectTests.LoginTest#pullingDataForLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>problem_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">SwagLabsProjectTests.LoginTest#pullingDataForLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">SwagLabsProjectTests.LoginTest#pullingDataForLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>error_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">SwagLabsProjectTests.LoginTest#pullingDataForLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>visual_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">SwagLabsProjectTests.LoginTest#pullingDataForLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>performance_glitch_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">SwagLabsProjectTests.ProdAddAndRemTest#caseOne</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">SwagLabsProjectTests.ProdAddAndRemTest#caseThree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">SwagLabsProjectTests.ProdAddAndRemTest#caseTwo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">SwagLabsProjectTests.ProductPriceConsistencyTest#fitstTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">SwagLabsProjectTests.ProductPriceConsistencyTest#secondTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">SwagLabsProjectTests.ProductPriceConsistencyTest#thirdTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">SwagLabsProjectTests.StandAloneTest#firsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">SwagLabsProjectTests.StandAloneTest#secondTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

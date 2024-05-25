@@ -1,49 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
+<suite thread-count="1" parallel="tests" name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="3" parallel="classes" name="Test(failed)">
+  <test thread-count="1" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="SwagLabsProjectTests.ProdAddAndRemTest">
-        <methods>
-          <include name="finish"/>
-          <include name="caseTwo"/>
-          <include name="caseThree"/>
-          <include name="begin"/>
-          <include name="caseOne"/>
-        </methods>
-      </class> <!-- SwagLabsProjectTests.ProdAddAndRemTest -->
-      <class name="SwagLabsProjectTests.ProductPriceConsistencyTest">
-        <methods>
-          <include name="finish"/>
-          <include name="secondTest"/>
-          <include name="thirdTest"/>
-          <include name="begin"/>
-          <include name="fitstTest"/>
-        </methods>
-      </class> <!-- SwagLabsProjectTests.ProductPriceConsistencyTest -->
       <class name="SwagLabsProjectTests.LoginTest">
         <methods>
           <include name="finish"/>
-          <include name="pullingDataForLogin"/>
           <include name="incorrectPassword"/>
           <include name="incorrectUserAndPass"/>
           <include name="begin"/>
-          <include name="lockedUser"/>
-          <include name="emptyUserField"/>
           <include name="incorrectUsername"/>
         </methods>
       </class> <!-- SwagLabsProjectTests.LoginTest -->
-      <class name="SwagLabsProjectTests.StandAloneTest">
-        <methods>
-          <include name="finish"/>
-          <include name="firsTest"/>
-          <include name="secondTest"/>
-          <include name="begin"/>
-        </methods>
-      </class> <!-- SwagLabsProjectTests.StandAloneTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Regression] -->

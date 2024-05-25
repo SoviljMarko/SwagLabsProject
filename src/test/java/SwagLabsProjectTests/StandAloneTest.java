@@ -3,6 +3,7 @@ package SwagLabsProjectTests;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,21 +16,12 @@ import markoSovilj.SwagLabsProject.LoginPage;
 import markoSovilj.SwagLabsProject.OrderCompletePage;
 import markoSovilj.SwagLabsProject.ProductDetailsPage;
 import markoSovilj.SwagLabsProject.ProductsPage;
+import resources.ConfigLoader;
+import resources.TestConstants;
 
 
 
 public class StandAloneTest extends BaseTest {
-
-	String productOne = "Backpack";
-	String productTwo = "Bike Light";
-	String productThree = "Bolt T-Shirt";
-	String productFour = "Fleece Jacket";
-	String productFive = "Onesie";
-	String productSix = "T-Shirt (Red)";
-
-	String firstName = "John";
-	String lastName = "Wick";
-	String postalCode = "123456";
 
 
 	@Test
@@ -40,7 +32,7 @@ public class StandAloneTest extends BaseTest {
 		loginPage.LogIn();
 
 		ProductsPage productsPage = new ProductsPage(driver);
-		String productName = productsPage.selectProduct(productOne);
+		String productName = productsPage.selectProduct(TestConstants.PRODUCT_ONE);
 
 		ProductDetailsPage productDetailsPage = new ProductDetailsPage(driver);
 		productDetailsPage.addToCart();
@@ -51,7 +43,7 @@ public class StandAloneTest extends BaseTest {
 		Assert.assertEquals(productName, cartProductName);
 
 		CheckoutInformationPage checkoutInfo = new CheckoutInformationPage(driver);
-		checkoutInfo.EnterInformations(firstName, lastName, postalCode);
+		checkoutInfo.EnterInformations(TestConstants.FIRST_NAME, TestConstants.LAST_NAME, TestConstants.POSTAL_CODE);
 
 		CheckoutOwerviewPage checkOwerview = new CheckoutOwerviewPage(driver);
 		String checkoutProductName =  checkOwerview.NameCheck();
@@ -74,15 +66,15 @@ public class StandAloneTest extends BaseTest {
 		loginPage.LogIn();
 
 		ProductsPage productsPage = new ProductsPage(driver);
-		productsPage.addProduct(productOne);
-		productsPage.addProduct(productTwo);
+		productsPage.addProduct(TestConstants.PRODUCT_ONE);
+		productsPage.addProduct(TestConstants.PRODUCT_TWO);
 
 	 	CartPage cartPage = new CartPage(driver);
 
-		Assert.assertTrue(cartPage.checkAllNamesAndCheckout(productOne, productTwo));
+		Assert.assertTrue(cartPage.checkAllNamesAndCheckout(TestConstants.PRODUCT_ONE, TestConstants.PRODUCT_TWO));
 
 		CheckoutInformationPage checkoutInfo = new CheckoutInformationPage(driver);
-		checkoutInfo.EnterInformations(firstName, lastName, postalCode);
+		checkoutInfo.EnterInformations(TestConstants.FIRST_NAME, TestConstants.LAST_NAME, TestConstants.POSTAL_CODE);
 
 		CheckoutOwerviewPage checkOwerview = new CheckoutOwerviewPage(driver);
 		Assert.assertTrue(checkOwerview.PriceCheck());
